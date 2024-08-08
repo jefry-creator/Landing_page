@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="/css/contactos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="shortcut icon"
+        href="https://res.cloudinary.com/dyk2n4p0q/image/upload/v1723060689/My%20images/vccgcftudcwkvhjxobbi.png"
+        type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <img class="logo"
+                    src="https://siman.vtexassets.com/assets/vtex.file-manager-graphql/images/5526a418-1a12-4bfc-9077-5a1b23f8d8c1___19999b42961a45dbb2f4293973939c0b.svg"
+                    alt="">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="/views/catalogo.html">Productos</a></li>
+                <li><a href="/views/contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="header">
+            <h1>Contacto</h1>
+        </div>
+
+        <!-- Lista de contactos -->
+        <div class="contact-list">
+            <div class="contact-info">
+                <h2>Para cualquier de tus consultas o comentarios sobre:</h2>
+                <p>• Atención a clientes</p>
+                <p>• Atención a proveedores</p>
+                <p>• Oficinas corporativas</p>
+                <p>• Recursos humanos</p>
+                <p>• Presidencia</p>
+                <p><strong>Llámanos:</strong> 2298-3777</p>
+                <p><strong>Escríbenos:</strong> 
+                    <a href="https://api.whatsapp.com/send/?phone=50322105454&text&app_absent=0" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Asesoría a través de Whatsapp
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="recommendation-form">
+            <h2>Envía tu Recomendación</h2>
+            <form action="enviar_recomendacion.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar Recomendación</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <img src="https://siman.vtexassets.com/assets/vtex/assets-builder/siman.store-theme/10.0.11/icons-footer/footer-logo___9a061112dc9f88f48198e36faff46e26.svg"
+            alt="">
+        <p>&copy; 2024 Almacenes Siman El Salvador. <br> Reservados todos los derechos.</p>
+        <div class="social-icons mt-3">
+            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
